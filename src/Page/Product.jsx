@@ -1,18 +1,21 @@
-import React, { createContext } from 'react';
+import React, {useContext } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import { useParams } from 'react-router-dom';
 import BreadCrum from '../Components/BreadCrum/BreadCrum';
+import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
+import Description from '../Components/Description/Description';
 
 const Product = () => {
-    const {all_product} = createContext(ShopContext)
+    const {all_product} = useContext(ShopContext)
     const {productId}= useParams();
-    const product = all_product.find((e)=> e.id=== productId)
+    const product = all_product.find((e)=> e.id=== Number(productId))
     return (
         <div>
 
             <BreadCrum product={product}/>
-
-            <h1>Hi</h1>
+            <ProductDisplay product={product}></ProductDisplay>
+            <Description></Description>
+           
             
         </div>
     );

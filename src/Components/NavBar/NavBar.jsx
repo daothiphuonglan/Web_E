@@ -3,8 +3,10 @@ import './NavBar.css'
 import { Link } from 'react-router-dom';
 import { BsShop } from 'react-icons/bs';
 import {BsFillCartCheckFill} from 'react-icons/bs'
+import {useContext} from 'react'
+import { ShopContext } from '../../Context/ShopContext';
 const NavBar = () => {
-   
+   const {getTotalCartItems}= useContext(ShopContext)
     return (
         <div className='navbar'>
 
@@ -26,7 +28,7 @@ const NavBar = () => {
              
              <Link style={{textDecoration:'none'}} to='/cart'><BsFillCartCheckFill></BsFillCartCheckFill></Link>
              
-             <div className="nav-cart-count">0</div>
+             <div className="nav-cart-count">{getTotalCartItems()}</div>
             </div>
             
         </div>

@@ -1,13 +1,15 @@
 import React from 'react';
 import './ProductDisplay.css'
-
 import { AiFillStar} from 'react-icons/ai';
 import { BsStarHalf} from 'react-icons/bs';
-
+import { ShopContext } from '../../Context/ShopContext';
+import { useContext } from 'react';
 const ProductDisplay = (props) => {
     const {product} = props;
+
+    const {addToCart}= useContext(ShopContext)
     return (
-        <div className="productDisplay">
+        <div className="productdisplay">
             <div className="productdisplay-left">
                 <div className="productdisplay-img-list">
                      <img src={product.image}/>
@@ -44,10 +46,10 @@ const ProductDisplay = (props) => {
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages.
                 </div>
 
-                <div className="productdisplay-right-size">
+                <div className="productdisplay-right-sizes">
                      <h1>Select Size</h1>
 
-                     <div className='productdisplay-right-size'>
+                     <div className='productdisplay-right-sizes'>
                          <div>S</div>
                          <div>M</div>
                          <div>L</div>
@@ -56,7 +58,7 @@ const ProductDisplay = (props) => {
                      </div>
                 </div>
 
-                <button>ADD TO CART</button>
+                <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
 
                  <p className='productdisplay-right-category'>
                     <span>Category: </span>
