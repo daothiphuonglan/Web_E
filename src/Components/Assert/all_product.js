@@ -1,11 +1,12 @@
 import pic_2 from './pic_2.jpg'
+import pic_3 from './pic_3.jpg'
 
 let all_product =[
     {
         id:1,
         name:"Happy",
         category:"women",
-        image:pic_2,
+        image:pic_3,
         new_price:50.0,
         old_price:80.5
     }
@@ -13,7 +14,7 @@ let all_product =[
         id:2,
         name:"Happy",
         category:"women",
-        image:pic_2,
+        image:pic_3,
         new_price:50.0,
         old_price:80.5
     }
@@ -21,7 +22,7 @@ let all_product =[
         id:3,
         name:"Happy",
         category:"women",
-        image:pic_2,
+        image:pic_3,
         new_price:50.0,
         old_price:80.5
     }
@@ -29,7 +30,7 @@ let all_product =[
         id:4,
         name:"Happy",
         category:"women",
-        image:pic_2,
+        image:pic_3,
         new_price:50.0,
         old_price:80.5
     }

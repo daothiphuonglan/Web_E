@@ -20,8 +20,15 @@
 }
 
 .cartitems-format {
-    font-size: 15px;font-weight: 500;
+    font-size: 15px;
+    font-weight: 500;
+  
 
+}
+
+.cartitems-format img {
+    width: 50%;
+    border-radius: 20px;
 }
 
 .cartitems-quantity{

@@ -7,7 +7,7 @@ const NewCollecions = () => {
         <div className="new-collections">
             <h1>New Collections</h1>
             <hr/>
-            <div className="collections">
+            <div className="collections-items">
                {data_product.map((data,index)=>{
                   return (  
                     <Item key={index} id={data.id} name={data.name} image={data.image}  new_price={data.new_price} old_price={data.old_price}></Item>

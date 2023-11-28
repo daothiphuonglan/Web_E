@@ -16,13 +16,13 @@
 
 .productdisplay-img-list img {
     height: 120px;
-    width: 100px;
+    width: 500px;
 }
 
 .productdisplay-main-img {
     padding-top: 15px;
-    width: 400px;
-    height: 500px;
+    width: 700px;
+    height: 400px;
 }
 .productdisplay-right {
     margin: 0px 70px;

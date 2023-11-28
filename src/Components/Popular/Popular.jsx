@@ -12,7 +12,7 @@ const Popular = () => {
              <div className="popular-item">
                  {data_product.map((data, index)=>{
                     return (  
-                        <Item key={index} id={data.id} name={data.name} image={data.image}  new_price={data.new_price} old_price={data.old_price}></Item>
+                        <Item  key={index} id={data.id} name={data.name} image={data.image}  new_price={data.new_price} old_price={data.old_price}></Item>
                     )
                  })}
              </div>

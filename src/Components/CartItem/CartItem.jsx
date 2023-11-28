@@ -30,7 +30,7 @@ const CartItem = () => {
                               
                              <button className="cartitems-quantity">{cartItems[e.id]}</button>
                              <p>{e.new_price*cartItems[e.id]}</p>
-                            <CiCircleRemove onClick={()=>{removeCart(e.id)}}></CiCircleRemove>
+                            <CiCircleRemove className="w-8 h-8 bg-red-600" onClick={()=>{removeCart(e.id)}}></CiCircleRemove>
                         </div>
 
                     </div>
